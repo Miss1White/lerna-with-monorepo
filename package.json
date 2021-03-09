@@ -12,9 +12,15 @@
       "path": "./node_modules/cz-lerna-changelog"
     }
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo \"git commit trigger husky pre-commit hook\" "
+    }
+  },
   "devDependencies": {
     "commitizen": "^4.2.3",
     "cz-lerna-changelog": "^2.0.3",
+    "husky": "^5.1.3",
     "lerna": "^3.22.1"
   }
 }
