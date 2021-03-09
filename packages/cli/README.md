@@ -1,6 +1,6 @@
 # `@mo-demo/cli`
 
-> TODO: description
+> test
 
 ## Usage
 
