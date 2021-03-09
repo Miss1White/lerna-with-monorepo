@@ -1,6 +1,6 @@
 # `@mo-demo/cli`
 
-> test1
+> test2
 
 ## Usage
 
