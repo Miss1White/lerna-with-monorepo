@@ -5,15 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL \" && exit 1",
-    "foo": "echo \"fooo\" && exit 0",
-    "bar": "echo \"bar\" && exit 0"
+    "c": "git-cz"
   },
-  "pre-commit": [
-    "foo",
-    "bar",
-    "test"
-  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
@@ -21,7 +14,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"git commit trigger husky pre-commit hook\" "
+      "pre-commit": "echo \"git commit trigger husky pre-commit hook\" ",
+      "commit-msg": "echo \"git commit trigger husky commit-msg hook\""
     }
   },
   "devDependencies": {
