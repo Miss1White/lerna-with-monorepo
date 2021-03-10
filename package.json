@@ -15,9 +15,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"git commit trigger husky pre-commit hook\" ",
+      "pre-commit": "lint-staged",
       "commit-msg": "echo \"git commit trigger husky commit-msg hook\""
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "prettier --write",
+      "eslint --cache --fix",
+      "git add"
+    ]
   },
   "devDependencies": {
     "@babel/cli": "^7.13.10",
@@ -27,6 +34,7 @@
     "babel-preset-minify": "^0.5.1",
     "commitizen": "^4.2.3",
     "cz-lerna-changelog": "^2.0.3",
+    "husky": "4.2.3",
     "lerna": "^3.22.1",
     "lint-staged": "^10.5.4",
     "standard": "^16.0.3"

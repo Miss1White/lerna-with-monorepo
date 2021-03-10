@@ -11,7 +11,7 @@
     "test": "__tests__"
   },
   "files": [
-    "dist"
+    "lib"
   ],
   "publishConfig": {
     "registry": "https://npm.zhenguanyu.com/"
